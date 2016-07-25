@@ -1,0 +1,48 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-drawer/paper-drawer-doc-helper.html">
+<link rel="import" href="../../bower_components/paper-drawer-panel/paper-drawer-panel.html">
+<dom-module id="nate-portfolio-app">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <div>
+            <paper-drawer-panel id="drawer">
+                <paper-drawer>
+                    <paper-drawer-title photo="face.png" name="Jonathan Lee" email="heyfromjonathan@gmail.com"></paper-drawer-title>
+
+                    <paper-drawer-subheader>Items with icon</paper-drawer-subheader>
+                    <paper-drawer-icon-item icon="icons:mail">All mail</paper-drawer-icon-item>
+                    <paper-drawer-icon-item icon="icons:delete">Trash</paper-drawer-icon-item>
+                    <paper-drawer-icon-item icon="icons:error">Spam</paper-drawer-icon-item>
+
+                    <paper-drawer-divider></paper-drawer-divider>
+
+                    <paper-drawer-subheader>Items without icon</paper-drawer-subheader>
+                    <paper-drawer-item>All mail</paper-drawer-item>
+                    <paper-drawer-item>Trash</paper-drawer-item>
+                    <paper-drawer-item>Spam</paper-drawer-item>
+                </paper-drawer>
+            </paper-drawer-panel>
+        </div>
+
+        <a href="javascript:this.$.drawer.openDrawer();">OPEN</a>
+    </template>
+
+    <script>
+        Polymer({
+
+            is: 'nate-portfolio-app',
+
+            properties: {
+                prop1: {
+                    type: String,
+                    value: 'nate-portfolio-app',
+                },
+            },
+
+        });
+    </script>
+</dom-module>
