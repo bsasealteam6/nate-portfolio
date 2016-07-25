@@ -1,0 +1,18 @@
+/* CSS Document */
+body{
+	font-family:H"Franklin Gothic Bold", "Arial Black", sans-serif;
+}
+.container{
+	width:100%;
+	height:100%;
+}
+.header h1{
+	text-align:center;
+}
+.header{
+	background-color:#5F5F5F;
+	color:#E0E0E0;
+}
+.content{
+	width:100%;
+}
